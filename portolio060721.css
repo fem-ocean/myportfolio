@@ -55,6 +55,10 @@ img{
 	max-width: 100%;
 }
 
+.mobile{
+	display: none;
+}
+
 
 
 /*------Nav Bar ---------*/
@@ -168,7 +172,7 @@ nav div ul li a:hover:after{
 	width: 101%;
 	height: 100%;
 	position: absolute;
-	background-image: url("../../UI UX/wallpaper group2.svg");
+	background-image: url("Assets/wallpaper group2.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -733,7 +737,7 @@ nav div ul li a:hover:after{
 .project-request{
 	width: 100%;
 	height: 300px;
-	background-image: url('../../UI UX/call center.jpg');
+	background-image: url('Assets/call center.jpg');
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -859,7 +863,7 @@ nav div ul li a:hover:after{
 .container-item1{
 	width: 250px;
 	height: 250px;
-	background-image: url("../../UI UX/andraz.jpg");
+	background-image: url("Assets/andraz.jpg");
 	background-size: cover;
 	margin: 30px;
 	box-shadow: 1px 1px 5px;
@@ -868,7 +872,7 @@ nav div ul li a:hover:after{
 .container-item2{
 	width: 250px;
 	height: 250px;
-	background-image: url("../../UI UX/burger2.jpg");
+	background-image: url("Assets/burger2.jpg");
 	background-size: cover;
 	margin: 30px;
 	box-shadow: 1px 1px 5px;
@@ -877,7 +881,7 @@ nav div ul li a:hover:after{
 .container-item3{
 	width: 250px;
 	height: 250px;
-	background-image: url("../../UI UX/mealpro.jpg");
+	background-image: url("Assets/mealpro.jpg");
 	background-size: cover;
 	margin: 30px;
 	box-shadow: 1px 1px 5px;
@@ -886,7 +890,7 @@ nav div ul li a:hover:after{
 .container-item4{
 	width: 250px;
 	height: 250px;
-	background-image: url("../../UI UX/sun.jpg");
+	background-image: url("Assets/sun.jpg");
 	background-size: cover;
 	margin: 30px;
 	box-shadow: 1px 1px 5px;
@@ -895,7 +899,7 @@ nav div ul li a:hover:after{
 .container-item5{
 	width: 250px;
 	height: 250px;
-	background-image: url("../../UI UX/riccardo.jpg");
+	background-image: url("Assets/riccardo.jpg");
 	background-size: cover;
 	margin: 30px;
 	box-shadow: 1px 1px 5px;
@@ -904,7 +908,7 @@ nav div ul li a:hover:after{
 .container-item6{
 	width: 250px;
 	height: 250px;
-	background-image: url("../../UI UX/pizzza.jpg");
+	background-image: url("Assets/pizzza.jpg");
 	background-size: cover;
 	margin: 30px;
 	box-shadow: 1px 1px 5px ;
@@ -941,7 +945,7 @@ nav div ul li a:hover:after{
 	width: 100%;
 	height: 510px;
 	display: block;
-	background-image: url("../../UI UX/Ajah-1.jpg");
+	background-image: url("Assets/Ajah-1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
@@ -971,7 +975,7 @@ nav div ul li a:hover:after{
 	height: 100px;
 	border: 1px solid black;
 	outline: dashed 2px rgba(75, 104, 191, 1.0);
-	background-image: url("../../UI UX/dillion.jpg");
+	background-image: url("Assets/dillion.jpg");
 	background-size: cover;
 	margin: auto;
 	margin-top: 60px;
@@ -1010,7 +1014,7 @@ nav div ul li a:hover:after{
 .contact{
 	width: 100%;
 	height: 600px;
-	background-image: url("../../UI UX/city.jpg");
+	background-image: url("Assets/city.jpg");
 	background-size: cover;
 	background-position: center;
 	position: fixed;
@@ -1237,3 +1241,13 @@ form > h1{
 		font-size: 3vw;
 	}
 }*/
+
+@media screen and (max-width: 768px) {
+	.mobile{
+		display: block;
+	}
+
+	.desktop{
+		display: none;
+	}
+}
