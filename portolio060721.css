@@ -1,9 +1,9 @@
 
-/* {$desktop:1200px;
-$laptop: 1024px;
-$tablet:768px;
-$mobilel: 600px;
-$mobiles: 320px;} */
+/* {$desktop= 1200px;
+$laptop =  1024px;
+$tablet =  768px;
+$mobilel = 600px;
+$mobiles =320px;} */
 
 
 
@@ -133,7 +133,6 @@ nav div ul li a:after{
 	background-color: rgba(75, 104, 191,1.0);
 	transition: transform 250ms;
 	-webkit-transition: transform 250ms;
-
 }
 
 nav div ul li a:hover:after{
@@ -159,20 +158,21 @@ nav div ul li a:hover:after{
 .hero-box{
 	width:100%;
 	height:550px;
+	overflow-y: hidden;
 	/*background-color: white;*/
 	background-size: cover;
-	background-position: left;
+	background-position: center;
 	background-repeat: repeat;
 	position: relative;
 	overflow-x: hidden;
-	/*overflow: auto;*/
 }
 
 .hero-overlay{
 	width: 101%;
-	height: 100%;
+	height: 102%;
 	position: absolute;
 	background-image: url("Assets/wallpaper group2.svg");
+	/* background-color: blue; */
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -200,29 +200,38 @@ nav div ul li a:hover:after{
 
 
 .hero-container{
-	width: 50%;
-	height: 400px;
-	/*background-color: blueviolet;*/
+	max-width: 40%;
+	height: 390px;
+	/* background-color: blueviolet; */
 	/*position: absolute;*/
 	margin-top: 150px;
-	margin-left: 98px;
+	margin-left: 60px;
+	display: flex;
+	flex: 0 0 200px;
+	flex-direction: row;
 }
 
 .hero-overlay > img{
-	width: 300px;
+	width: 140px;
 	position: absolute;
-	bottom: 1px;
-	right: 130px;
+	bottom: 5px;
+	right: 20px;
+	/* max-width: 100%; */
+	/* display: none; */
+}
+
+.hero-content{
+	/* background-color: yellow; */
+	height: 320px;
 }
 
 .hero-content > h4 {
 	color: rgb(75, 104, 191);
 	font-size: 30px;
 	text-transform: uppercase;
-	top: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 8%;
 	letter-spacing: 2px;
-	position: relative;
+	
 
 }
 
@@ -231,28 +240,23 @@ nav div ul li a:hover:after{
 	font-size: 40px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	position: relative;
-	top: 30px;
+	margin-bottom: auto;
 }
 
 .hero-content > p{
 	color: black;
-	padding-bottom: 20px;
 	text-indent: 0px;
 	letter-spacing: 2px;
 	word-spacing: 3px;
 	font-size: 14px;
-	margin-right: 160px;
-	position: relative;
-	top: 25px;
-
 }
+
 .hero-button a{
 	color: white;
 }
 
 .hero-button{
-	/*display: block;*/
+	display: block;
 	border: 1px  solid rgba(75, 104, 191,1.0) ;
 	padding: 14px 30px ;
 	border-radius: 30px;
@@ -261,10 +265,7 @@ nav div ul li a:hover:after{
 	cursor: pointer;
 	transition: background-color 0.3s;
 	font-size: 14px;
-	position: relative;
-	margin-top: 35px;
-	top: 15px;
-	font-family: "montserrat",sans-serif;
+	margin-top: 15%;
 }
 
 .hero-button:hover{
@@ -279,16 +280,14 @@ nav div ul li a:hover:after{
 }
 
 .hero-socials{
-	width: 25%;
-	height: 40px;
-	/*background-color: rgba(15, 255, 100, 1.0);*/
-	margin-top: 72px;
-	/*position: relative;*/
+	width: 200px;
+	height: 45px;
+	/* background-color: rgba(15, 255, 100, 1.0); */
 	display: flex;
+	flex-wrap: nowrap;
 	flex-direction: row;
 	justify-content: space-between;
-
-
+	align-items: center;
 }
 
 .social-fb{
@@ -380,19 +379,19 @@ nav div ul li a:hover:after{
 /*---------About Me Section----------*/
 
 .about-me{
-	width: 100%;
-	height: 500px;
-	background-color: #fff;
-	display: block;
+	/* grid-template-columns: repeat(auto-fit, 100vw); */
+	/* height: 1200px; */
+	/* background-color: red; */
+	background-color: white;
+	display: grid;
 	padding-top: 30px;
-	
+	align-content: start;
 }
 
 .about-me-box1{
 	width: 100%;
-	height: 150px;
-	display: block;
-	/*background-color: yellow;*/
+	/* background-color: yellow; */
+	/* padding: 10px; */
 }
 
 .about-me-box1 h1{
@@ -419,32 +418,29 @@ nav div ul li a:hover:after{
 
 .about-me-box2 {
 	width: 100%;
-	height: 400px;
-	background-color: white;
-	display: block;
-	position: static;
+	height: 300px;
+	/* background-color: white; */
+	/* background-color: blue; */
+	display: grid;
+	grid-template-columns: auto;
+	grid-row-gap: 10px;
+	/* grid-template-rows: auto; */
+	/* position: static; */
 	/*position: relative;*/
 
 }
 
 .about-me-left{
-	/*display: block;*/
-	float: left;
-	width: 50%;
-	height:100%;
-	/*position: absolute;*/
-	/*background-color: yellowgreen;*/
-	/*rgba(237, 237, 237, 0.2)*/
+	/* background-color: rgba(245, 17, 17, 0.911); */
+	display: grid;
 }
 
 .about-me-cont{
-	width: 78%;
-	height: 65%;
-	/*margin: auto;*/
-	margin-top: 40px;
-	margin-left: 100px;
-	/*background-color: blue;*/
+	/* border: 3px solid yellow; */
 	letter-spacing: 0.5px;
+	justify-content: center;
+	margin: 40px;
+	
 }
 
 .about-me-cont > p{
@@ -455,15 +451,13 @@ nav div ul li a:hover:after{
 	/*background-color: darkred;*/
 }
 
-
-
 .birth img{
 	width: 12px;
 	height: 12px;
 }
 
 .birth{
-	margin-top: 30px;
+	margin-top: 10%;
 	/*background-color: darkred;*/
 }
 
@@ -472,111 +466,30 @@ nav div ul li a:hover:after{
 }
 
 .about-me-right{
-	/*display: inline-block;*/
-	float: right;
-	width: 50%;
-	height: 100%;
-	/*position: absolute;*/
-	/*background-color: rgba(237, 237, 237, 0.2);*/
-	/*background-color: blueviolet;*/
+	display: grid;
+	/* float: right; */
+	/* width: 50%; */
+	/* height: 50px; */
+	/* position: absolute; */
+	/* background-color: rgba(223, 198, 198, 0.637); */
+	background-color:#ffffff;
+	
 }
 
 .about-me-rcont{
-	width: 65%;
-	height: 60%;
-	margin: auto;
-	margin-top: 50px;
+	/* width: 65%;
+	height: 60%; */
+	/* margin: auto; */
+	/* margin-top: 50px; */
 	/*background-color: rgba(237, 237, 237, 0.2);*/
-	/*background-color: yellow;*/
-}
-
-
-
-.about-me-rcont > p{
-	margin-top: 10px;
-	text-align: left;
-	color: rgba(0, 0, 0, 1.0);
-}
-
-.progress-bgd-html{
-	/*width: 250px;*/
-	height: 3px;
-	background:rgba(75, 104, 191,0.3);
-	display: block;
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	border-radius: 3px;
-	overflow: hidden;
-	/*box-shadow: 0 0 10px #2187e7b3;*/
-}
-
-.progress-bgd-html span{
-	height: 2px;
-	float: left;
-	background: rgba(75, 104, 191,1.0);
-}
-
-.progress-bar-html{
-	width: 80%;
-}
-
-.progress-bgd-css{
-	height: 3px;
-	background: rgba(75, 104, 191,0.3);
-	display: block;
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	border-radius: 3px;
-	overflow: hidden;
-	/*box-shadow: 0 0 10px #2187e7b3;*/
-}
-
-.progress-bgd-css span{
-	height: 2px;
-	float: left;
-	background: rgba(75, 104, 191,1.0);
-}
-
-.progress-bar-css{
-	width: 75%;
-}
-
-.progress-bgd-photoshop{
-	height: 3px;
-	background: rgba(75, 104, 191,0.3);
-	display: block;
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	border-radius: 3px;
-	overflow: hidden;
-	/*box-shadow: 0 0 10px #2187e7b3;*/
-}
-
-.progress-bgd-photoshop span{
-	height: 2px;
-	float: left;
-	background: rgba(75, 104, 191,1.0);
-}
-
-.progress-bar-photoshop{
-	width: 65%;
-}
-
-.progress-bgd-react{
-	height: 3px;
-	background: rgba(75, 104, 191,0.3);
-	display: block;
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	border-radius: 3px;
-	overflow: hidden;
-	/*box-shadow: 0 0 10px #2187e7b3;*/
-}
-
-.progress-bgd-react span{
-	height: 2px;
-	float: left;
-	background: rgba(75, 104, 191,1.0);
-}
-
-.progress-bar-react{
-	width: 70%;
+	border: 2px solid rgba(117, 78, 249, 1.0);;
+	justify-content: center;
+	align-content: center;
+	grid-row-gap: 15px;
+	justify-content: space-evenly;
+	margin: 40px;
+	display: grid;
+	grid-template-columns: auto auto;
 }
 
 /*-------About me Section end---------*/
@@ -587,23 +500,24 @@ nav div ul li a:hover:after{
 
 .my-services{
 	width: 100%;
-	height: 900px;
 	display: block;
 	background-color: rgba(251, 251, 251, 1.0);
 	/*padding-top: 30px;*/
-	/*padding-bottom: 30px;*/
+	/* padding-bottom: 30px; */
 }
 
 .my-services-1 h1{
 	text-align: center;
 	color: black;
 	font-size: 35px;
+	padding: 20px;
 }
 
 .my-services-1 div{
 	width: 60%;
-	height: 45px;
+	height: 160px;
 	margin: auto;
+	padding-bottom: 30px;
 }
 
 .my-services-1 p{
@@ -736,7 +650,7 @@ nav div ul li a:hover:after{
 
 .project-request{
 	width: 100%;
-	height: 300px;
+	height: 620px;
 	background-image: url('Assets/call center.jpg');
 	background-size: cover;
 	background-position: center;
@@ -776,8 +690,10 @@ nav div ul li a:hover:after{
 
 .button-wrap{
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding-top: 30px;
 	/*min-height: 100vh;*/
 }
 
@@ -825,17 +741,22 @@ nav div ul li a:hover:after{
 
 .recent-work{
 	width: 100%;
-	height: 980px;
+	height: 2700px;
 	display: block;
+	position: relative;
 	background-color: white;
+	/* background-color: rgb(48, 92, 150); */
+
 	padding-top: 40px;
 }
 
 .recent-work-1{
 	text-align: center;
 	width: 60%;
-	/*background-color: black;*/
+	height: 20%;
+	/* background-color: black; */
 	margin: auto;
+	/* position: absolute; */
 }
 
 .recent-work-1 > h1{
@@ -852,8 +773,9 @@ nav div ul li a:hover:after{
 	display: flex;
 	flex-direction: row;
 	width: 70%;
-	height: 650px;
-	/*background-color: yellow;*/
+	height: 80%;
+	/* position: absolute; */
+	/* background-color: yellow; */
 	flex-wrap: wrap;
 	justify-content: center;
 	/*justify-content: space-around;*/
@@ -917,6 +839,7 @@ nav div ul li a:hover:after{
 
 .work-button{
 	display: block;
+	/* position: static; */
 	border: 0;
 	padding: 16px 30px;
 	border-radius: 30px;
@@ -943,7 +866,7 @@ nav div ul li a:hover:after{
 
 .testimonial{
 	width: 100%;
-	height: 510px;
+	height: 610px;
 	display: block;
 	background-image: url("Assets/Ajah-1.jpg");
 	background-size: cover;
@@ -1060,6 +983,12 @@ form > h1{
 	margin: auto;
 	box-sizing: border-box;
 	padding: 10px;
+}
+.textarea{
+	resize: none;
+}
+#message{
+	resize: none;
 }
 
 .submit-cont{
@@ -1180,74 +1109,154 @@ form > h1{
 /*-------Footer Section end-------*/
 
 /*RESPONSIVENESS*/
-/*Making a class for each of the 12 columns of the viewport by dividing the screen into equal parts */
-
-/*.col-s-1{width: 8.33%;}
-.col-s-2{width: 16.66%;}
-.col-s-3{width: 25%;}
-.col-s-4{width: 33.33%;}
-.col-s-5{width: 41.66%;}
-.col-s-6{width: 50%;}
-.col-s-7{width: 58.33%;}
-.col-s-8{width: 66.66%;}
-.col-s-9{width: 75%;}
-.col-s-10{width: 83.33%;}
-.col-s-11{width: 91.66%;}
-.col-s-12{width: 100%;}*/
 
 
-
-
-/*We want to float all the columns to the left
-*/
-/*[class*="col-"]{
-	float: left;
-	padding: 15px;
-	border: 1px solid red;
-}	
-*/
-
-
-
-
-/*The columns inside a row are all floating to the left, and are therefore taken out of the flow of the page, and other elements will be placed as if the columns do not exist. To prevent this, we will add a style that clears the flow: */
-
-/*.row::after{
-	content: "";
-	clear: both;
-	display: table;
-}*/
-
-
-/*Hide the picture in the Hero box on tablets (768px)*/
-
-
-
-
-/*@media only screen and (max-width: 768px){
+@media only screen and (max-width:350px){
+	.effect-div .effect{
+		bottom: 70%;
+	}
+	.hero-container{
+		margin-left: 30px;
+	}
 	.hero-overlay > img{
 		display: none;
+	}
+	.about-me-box1{
+		height: 330px;
+	}
+	.about-me-box2{
+		height:1000px;
+	}
+	.about-me{
+		height: 1400px;
+	}
+	.my-services{
+		height: 2250px;
+	}
+}
+
+@media only screen and (min-width:350px){
+	.hero-container{
+		margin-left: 98px;
+	}
+	.hero-socials{
+		flex-wrap:wrap
+	}
+	.about-me-box1{
+		height: 280px;
+	}
+	.about-me-box2{
+		height: 1000px;
+	}
+	.about-me{
+		height: 1400px;
+	}
+
+	.my-services-1 div{
+		height: 140px;
+	}
+	.my-services{
+		height: 2250px;
 	}
 }
 
 
-
-
-@media only screen and (max-width: 600px){
-	/*For extra small devices*/
-	/*[class*="col-"]{
-		width: 100%;
-		padding: 60px;
-		font-size: 3vw;
+@media only screen and (min-width:600px ){
+	/* for herobox image */
+	.hero-overlay > img{
+		width: 200px;
+		display: inline;
+		right: 130px;
 	}
-}*/
+	.hero-container{
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.about-me-box1{
+		height: 190px;
+	}
+	.about-me-box2{
+		height: 800px;
+	}
+	.about-me{
+		height: 1100px;
+	}
 
-@media screen and (max-width: 768px) {
+	.my-services-1 div{
+		height: 100px;
+	}
+
+	.project-request{
+		height: 500px;
+	}
+	.button-wrap{
+		flex-direction: row;
+	}
+
+	.testimonial{
+		height: 510px;
+	}
+}
+
+@media only screen and (min-width:703px){
+	.my-services{
+		height: 1250px;
+	}
+	.project-request{
+		height: 400px;
+	}
+}
+
+@media only screen and (min-width:768px ){
+	/* for herobox image */
+	.hero-overlay > img{
+		width: 300px;
+		display: inline;
+		right: 130px;
+	}
+	.hero-container{
+		margin-left: 98px;
+	}
+	.about-me-box2{
+		grid-template-columns: 50% 50%;
+		height: 500px;
+	}
+	.about-me{
+		height: 800px;
+	}
+	/* .recent-work{
+		height: 2100px;
+	} */
+	
+}
+
+@media only screen and (min-width:886px){
+	.recent-work{
+		height: 1200px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	/* for nav bar */
 	.mobile{
-		display: block;
+		display: inline;
 	}
 
-	.desktop{
-		display: none;
+	.my-services-1 div{
+		height: 70px;
+	}
+	.project-request{
+		height: 300px;
+}
+
+@media only screen and (min-width:1058px){
+	.my-services{
+		height:800px;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	.recent-work-2{
+		height: 70%;
 	}
 }

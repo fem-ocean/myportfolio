@@ -16,11 +16,11 @@
 
 	<!---------- Nav bar------- -->
 
-	<header>
+	<header> 	
 		<nav>
 			<div class="container">
 				<div class="logo"><a href="portfolio060721.html">F</a></div>
-				<ul class="menu-items">
+				<ul class="menu-items mobile">
 					<li><a class="active" href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#services">Services</a></li>
@@ -77,11 +77,11 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 				</div>
 			</div>
-			<div class="about-me-box2 row">
-				<div class="about-me-left col-">
+			<div class="about-me-box2">
+				<div class="about-me-left">
 					<div class="about-me-cont">
 						<p style="font-size:18px"><strong>Hi there! I'm Femi Oshin</strong></p>
-						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+						<p style="margin-top: 8%;">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
 						<div class="birth">
 							<img src="Assets/calendar.svg"> <strong style="margin-right: 5px;">Date of birth:</strong> 8 June 1995 
 							<span style="margin-left: 25px;"><img src="Assets/email.svg"> <strong style="margin-right:5px;">Email:</strong>parkermysite.com</span>
@@ -90,18 +90,20 @@
 							<span style="margin-left: 47px;"><img src="Assets/locationn.svg"> <strong style="margin-right:5px;">Location:</strong>4373, El Centro, CA</span>
 							</div>
 						</div>
-					</div>
+					</div> 
 				</div>
-				<div class="about-me-right col-">
+				<div class="about-me-right">
 					<div class="about-me-rcont">
-						<p>HTML<span class="progress-bgd-html"><span class="progress-bar-html"></span></span> 80%
-						</p>
-						<p>CSS<span class="progress-bgd-css"><span class="progress-bar-css"></span></span> 75%</p>
-						<p>Javascript<span class="progress-bgd-photoshop"><span class="progress-bar-photoshop"></span></span> 65%</p>
-						<p>React<span class="progress-bgd-react"><span class="progress-bar-react"></span></span> 70%</p>
+						<div><img style="width: 80px;" src="Assets/html5-brands.svg"></div>
+						<div><img style="width: 80px;" src="Assets/css3-alt-brands.svg"></div>
+						<div><img style="width: 80px;" src="Assets/js-brands.svg"></div>
+						<div><img style="width: 80px;" src="Assets/react-brands.svg"></div>
+						<div><img style="width: 80px;" src="Assets/python-brands.svg"></div>
+						<div><img style="width: 80px;" src="Assets/git-brands.svg"></div>
+
 					</div>
 				</div>
-			</div>
+			</div> 
 		</section>
 		<!----------- About me Section end------ -->
 
@@ -198,14 +200,14 @@
 
 		<!------------ Project Request Section------ -->
 
-		<section class="project-request row">
+		<section class="project-request">
 			<div class="project-request-overlay">
 				<div class="pr-cont">
 					<h1>Have any Project on Mind?</h1>
 					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 					<div class="button-wrap">
 						<div class="cv-button">
-							<button class="btn" ><a target="_blank" href="../../can/Olufemi-Oshin.pdf">Download CV</button>
+							<button class="btn" ><a target="_blank" href="Assets/Olufemi-Oshin.pdf">Download CV</button>
 						</div>
 						<div class="hire-me-button">
 							<button class="btn-outline"><a href="#"></a> Hire me</button>
@@ -221,7 +223,7 @@
 
 		<!-- ----------Portfolio Section---------- -->
 
-		<section class="recent-work row" id="portfolio">
+		<section class="recent-work" id="portfolio">
 			<div class="recent-work-1">
 				<h1>Portfolio</h1>	
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -234,7 +236,7 @@
 				<div class="container-item5"></div>
 				<div class="container-item6"></div>
 			</div>
-			<button class="work-button">More Works</button>
+			<div><button class="work-button">More Works</button></div>
 		</section>
 		<!------------ Portfolio Section end------- -->
 
@@ -243,7 +245,7 @@
 
 		<!------------ Testimonial Section---------- -->
 
-		<section class="testimonial row" id="testimonials">
+		<section class="testimonial" id="testimonials">
 			<div class="testimonial-overlay">
 				<h1>Testimonials</h1>
 				<div class="profile-box"></div>	
@@ -278,29 +280,24 @@
 			<form action="">
 				<h1>Contact me</h1>
 				<div style="margin-top:10px">
-					<strong><p>Name:</p></strong>
-					<label for="name">
+					<label for="name"><strong>Name:</strong></label>
 					<input id="name" class="input-box" type="text" name="name" placeholder="Your name*" required>
-					</label>
 				</div>
 
 				<div style="margin-top:20px">
-					<label for="email">
-						<strong><p>e-mail:</p></strong>
-						<input id="email" class="input-box" type="email" name="email" placeholder="johndoe@gmail.com*" required>
-					</label>
+					<label for="email"><strong>e-mail:</strong></label>
+					<input id="email" class="input-box" type="email" name="email" placeholder="johndoe@gmail.com*" required>
 				</div>
 
 				<div style="margin-top:20px">
-					 <strong><p>Subject:</p></strong>
-					 <label for="subject">
+					 <label for="subject"><strong>Subject:</strong></label>
 						<input id="subject" class="input-box" type="text" name="subject" placeholder="Subject">
 					</label>
 				</div>
 
-				<div style="margin-top:20px">
-					<strong><p>Message:</p></strong>
-					<textarea rows="10" cols="75" placeholder="Type your message here">
+				<div style="margin-top:20px; max-width:200px">
+					<label for="message"><strong><p>Message:</p></strong></label>
+					<textarea id="message" name="textarea" rows="10" cols="75" maxlength="1000" minlength="5"  placeholder="Type your message here">
 					</textarea>
 				</div>
 
