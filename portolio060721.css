@@ -63,6 +63,7 @@ img{
 
 /*------Nav Bar ---------*/
 
+
 nav{
 	width:100%;
 	height:80px;
@@ -70,13 +71,13 @@ nav{
 	position: fixed;
 	z-index: 100;
 	box-shadow: 0.2px 0px 8px #bdbdbd;
-	/*margin-top: none;*/	
+		
 }
 
 .container{
 	width: 85%;
 	height: 70px;
-	/*background-color: red;*/
+	/* background-color: red; */
 	margin: auto;
 	/*max-width: 1140px;*/
 }
@@ -158,6 +159,7 @@ nav div ul li a:hover:after{
 .hero-box{
 	width:100%;
 	height:550px;
+	display: block;
 	overflow-y: hidden;
 	/*background-color: white;*/
 	background-size: cover;
@@ -198,21 +200,28 @@ nav div ul li a:hover:after{
 	}
 }
 
+.main-container{
+	width: 85%;
+	height: 70%;
+	position: relative;
+	/* background-color: aqua; */
+	margin:auto;
+	margin-top:120px;
+}
 
 .hero-container{
-	max-width: 40%;
+	max-width: 100%;
 	height: 390px;
 	/* background-color: blueviolet; */
 	/*position: absolute;*/
 	margin-top: 150px;
-	margin-left: 60px;
 	display: flex;
-	flex: 0 0 200px;
+	/* flex: 0 0 200px; */
 	flex-direction: row;
 }
 
 .hero-overlay > img{
-	width: 140px;
+	width: 120px;
 	position: absolute;
 	bottom: 5px;
 	right: 20px;
@@ -222,17 +231,9 @@ nav div ul li a:hover:after{
 
 .hero-content{
 	/* background-color: yellow; */
-	height: 320px;
-}
-
-.hero-content > h4 {
-	color: rgb(75, 104, 191);
-	font-size: 30px;
-	text-transform: uppercase;
-	margin-bottom: 8%;
-	letter-spacing: 2px;
-	
-
+	display: flex;
+	flex-direction: column;
+	flex: 0.5 1 250px;
 }
 
 .hero-content > h1{
@@ -240,7 +241,7 @@ nav div ul li a:hover:after{
 	font-size: 40px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	margin-bottom: auto;
+	/* margin-bottom: auto; */
 }
 
 .hero-content > p{
@@ -249,6 +250,8 @@ nav div ul li a:hover:after{
 	letter-spacing: 2px;
 	word-spacing: 3px;
 	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 40px;
 }
 
 .hero-button a{
@@ -265,7 +268,7 @@ nav div ul li a:hover:after{
 	cursor: pointer;
 	transition: background-color 0.3s;
 	font-size: 14px;
-	margin-top: 15%;
+	max-width: max-content;
 }
 
 .hero-button:hover{
@@ -288,6 +291,7 @@ nav div ul li a:hover:after{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 10px;
 }
 
 .social-fb{
@@ -296,8 +300,10 @@ nav div ul li a:hover:after{
 	border-radius: 50%;
 	border: 2px solid rgba(0, 0, 0, 0.2);
 	background-size: cover;
+	overflow: hidden;
 	transition: border 0.3s;
 }
+
 
 .social-fb:hover{
 	border: 2px solid rgba(75, 104, 191, 0.8);
@@ -379,75 +385,49 @@ nav div ul li a:hover:after{
 /*---------About Me Section----------*/
 
 .about-me{
-	/* grid-template-columns: repeat(auto-fit, 100vw); */
-	/* height: 1200px; */
+	height: 1800px;
 	/* background-color: red; */
 	background-color: white;
-	display: grid;
+	display: block;
+	position: relative;
 	padding-top: 30px;
-	align-content: start;
 }
 
 .about-me-box1{
-	width: 100%;
 	/* background-color: yellow; */
-	/* padding: 10px; */
+	padding: 10px;
+	margin: 20px;
 }
 
-.about-me-box1 h1{
-	color: black;
-	text-align: center;
-	font-size: 35px;
-
-}
-
-.about-me-box1 > div{
-	width: 60%;
-	height: 45px;
+.about-me-box1-cont {
+	width: 80%; 
+	height: 400px;
 	margin: auto;
 	letter-spacing: 0.5px;
-}
-
-
-.about-me-box1 p{
+	/* border: 1px solid red; */
 	text-align: center;
-	color: black;
-	margin-top: 20px;
-	position: static;
 }
 
 .about-me-box2 {
-	width: 100%;
-	height: 300px;
+	padding: 10px;
+	margin: 20px;
+	height: 1300px;
 	/* background-color: white; */
 	/* background-color: blue; */
-	display: grid;
-	grid-template-columns: auto;
-	grid-row-gap: 10px;
-	/* grid-template-rows: auto; */
-	/* position: static; */
-	/*position: relative;*/
-
+	display: flex;
+	flex-direction: column;
 }
 
 .about-me-left{
-	/* background-color: rgba(245, 17, 17, 0.911); */
-	display: grid;
+	/* border: 1px solid white; */
+	padding: 15px;
+	/*display: grid;*/
 }
 
-.about-me-cont{
-	/* border: 3px solid yellow; */
-	letter-spacing: 0.5px;
-	justify-content: center;
-	margin: 40px;
-	
-}
-
-.about-me-cont > p{
+.about-me-left > p{
 	margin-top: 20px;
 	color: black;
 	text-align: justify;
-
 	/*background-color: darkred;*/
 }
 
@@ -457,39 +437,92 @@ nav div ul li a:hover:after{
 }
 
 .birth{
-	margin-top: 10%;
-	/*background-color: darkred;*/
+	margin-top: 10px;
+	/* padding: 15px; */
 }
 
-.birth p{
+/* .birth p{
 	color: black;
-}
+} */
 
 .about-me-right{
 	display: grid;
-	/* float: right; */
-	/* width: 50%; */
-	/* height: 50px; */
-	/* position: absolute; */
-	/* background-color: rgba(223, 198, 198, 0.637); */
-	background-color:#ffffff;
-	
+	padding: 15px;
+	margin-top: 20px;
+	border: 2px solid rgba(117, 78, 249, 1.0);
+	justify-content: center;
+	/* align-content: center; */ 
+	grid-column-gap: 30px;
+	grid-row-gap: 5px;
+	/* margin: 10px; */
+	grid-template-columns: auto auto;
+	grid-template-rows: 1fr 1fr 1fr;
 }
 
-.about-me-rcont{
-	/* width: 65%;
-	height: 60%; */
-	/* margin: auto; */
-	/* margin-top: 50px; */
-	/*background-color: rgba(237, 237, 237, 0.2);*/
-	border: 2px solid rgba(117, 78, 249, 1.0);;
-	justify-content: center;
-	align-content: center;
-	grid-row-gap: 15px;
-	justify-content: space-evenly;
-	margin: 40px;
-	display: grid;
-	grid-template-columns: auto auto;
+.about-me-right div{
+	/* background-color: black; */
+	width: 100px;
+}
+
+.splash-cont{
+	display: none;
+}
+
+.splash1, .splash2, .splash3, .splash4, .splash5, .splash6, .splash7{
+	width: 10px;
+	height: 10px;
+	margin: 10px;
+	border-radius: 50%;
+	background-color: rgb(238, 66, 14);
+	position: absolute;
+}
+
+.splash1{
+	bottom: 220px;
+	right: 25px;
+	animation: star 3s linear infinite alternate;
+}
+
+@keyframes star{
+	0% {background-color: rgba(0, 0, 0, 0.8);}
+	50% {background-color: rgb(238, 66, 14);}
+	100% {background-color: rgba(117, 78, 249, 0.7);}
+}
+
+.splash2{
+	bottom: 350px;
+	right:110px;
+	animation: star 4s linear infinite alternate;
+}
+
+.splash3{
+	bottom: 190px;
+	right:250px;
+	animation: star 5s linear infinite alternate;
+}
+
+.splash4{
+	bottom: 500px;
+	right: 150px;
+	animation: star 6s linear infinite alternate;
+}
+
+.splash5{
+	bottom: 190px;
+	right: 130px;
+	animation: star 2s linear infinite alternate;
+}
+
+.splash6{
+	bottom: 600px;
+	right: 100px;
+	animation: star 3s linear infinite alternate;
+}
+
+.splash7{
+	bottom: 470px;
+	right: 270px;
+	animation: star 4s linear infinite alternate;
 }
 
 /*-------About me Section end---------*/
@@ -515,9 +548,10 @@ nav div ul li a:hover:after{
 
 .my-services-1 div{
 	width: 60%;
-	height: 160px;
+	height: 300px;
 	margin: auto;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
+	/* background-color: rgb(238, 66, 14); */
 }
 
 .my-services-1 p{
@@ -541,7 +575,6 @@ nav div ul li a:hover:after{
 	margin: auto;
 	margin-top: 50px;
 }
-
 
 .my-services-2 > div{
 	width: 250px;
@@ -569,16 +602,11 @@ nav div ul li a:hover:after{
 	box-shadow: 0.5px 0.5px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
 .container-item p{
 	/*font-size: 15px;*/
 	color: black;
-	margin-top: 20px;
-	
+	margin-top: 20px;	
 }
-
 
 .uiux{
 	width: 50px;
@@ -650,7 +678,7 @@ nav div ul li a:hover:after{
 
 .project-request{
 	width: 100%;
-	height: 620px;
+	height: 590px;
 	background-image: url('Assets/call center.jpg');
 	background-size: cover;
 	background-position: center;
@@ -667,7 +695,7 @@ nav div ul li a:hover:after{
 
 
 .pr-cont{
-	width: 60%;
+	width: 70%;
 	height: 250px;
 	margin: auto;
 	letter-spacing: 0.5px;
@@ -741,19 +769,18 @@ nav div ul li a:hover:after{
 
 .recent-work{
 	width: 100%;
-	height: 2700px;
+	height: 2280px;
 	display: block;
 	position: relative;
 	background-color: white;
 	/* background-color: rgb(48, 92, 150); */
-
 	padding-top: 40px;
 }
 
 .recent-work-1{
 	text-align: center;
 	width: 60%;
-	height: 20%;
+	height: 190px;
 	/* background-color: black; */
 	margin: auto;
 	/* position: absolute; */
@@ -773,7 +800,7 @@ nav div ul li a:hover:after{
 	display: flex;
 	flex-direction: row;
 	width: 70%;
-	height: 80%;
+	height:1900px;
 	/* position: absolute; */
 	/* background-color: yellow; */
 	flex-wrap: wrap;
@@ -839,6 +866,7 @@ nav div ul li a:hover:after{
 
 .work-button{
 	display: block;
+	width: 150px;
 	/* position: static; */
 	border: 0;
 	padding: 16px 30px;
@@ -936,8 +964,8 @@ nav div ul li a:hover:after{
 
 .contact{
 	width: 100%;
-	height: 600px;
-	background-image: url("Assets/city.jpg");
+	height: 90vh;
+	background-image: url("Assets/cityy.jpg");
 	background-size: cover;
 	background-position: center;
 	position: fixed;
@@ -963,7 +991,7 @@ nav div ul li a:hover:after{
 }
 
 form{
-	width: 50%;
+	width: 80%;
 	height: 680px;
 	margin: auto;
 	background-color: white;
@@ -988,7 +1016,7 @@ form > h1{
 	resize: none;
 }
 #message{
-	resize: none;
+	column-span: 70;
 }
 
 .submit-cont{
@@ -1037,14 +1065,14 @@ form > h1{
 }
 
 .socials{
-	width: 15%;
+	width: 150px;
 	height: 40px;
-	/*background-color: black;*/
+	/* background-color: black; */
 	margin: auto;
 	/*margin-top: 10px;*/
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: center;
 	justify-content: space-around;
 }
@@ -1112,150 +1140,216 @@ form > h1{
 
 
 @media only screen and (max-width:350px){
+	/*----- Hero Box----- */
 	.effect-div .effect{
 		bottom: 70%;
 	}
-	.hero-container{
-		margin-left: 30px;
-	}
+	
 	.hero-overlay > img{
-		display: none;
+		border-radius: 50%;
+		bottom: 70vw;
+		width: 100px;
 	}
-	.about-me-box1{
+
+	/* ----About Me------- */
+	/* .about-me-box1{
 		height: 330px;
 	}
 	.about-me-box2{
 		height:1000px;
 	}
 	.about-me{
-		height: 1400px;
-	}
+		height: 1400px; */
+
+	/* -----My Services----- */
 	.my-services{
-		height: 2250px;
+		height: 2380px;
+	}
+	/* -----Contact me------ */
+	.form{
+		width: 80%;
 	}
 }
 
 @media only screen and (min-width:350px){
-	.hero-container{
-		margin-left: 98px;
+	/* -------Hero Box------ */
+	/* .hero-container{
+		margin-left: 98px; }*/
+	.my-name{
+		margin-top: 20px;
 	}
 	.hero-socials{
 		flex-wrap:wrap
 	}
-	.about-me-box1{
-		height: 280px;
+
+	/* ----About me----- */
+	
+	.about-me-box1-cont{
+		height: 330px;
 	}
 	.about-me-box2{
-		height: 1000px;
+		height: 1150px;
 	}
 	.about-me{
-		height: 1400px;
-	}
+		height: 1600px;
+	} 
 
+	/* -----My Services----- */
 	.my-services-1 div{
-		height: 140px;
+		height: 200px;
+		padding-bottom: 10px;
 	}
 	.my-services{
-		height: 2250px;
+		height: 2380px;
 	}
+
+	/* ------Project Request----- */
+	.project-request{
+		height: 530px;
 }
+
 
 
 @media only screen and (min-width:600px ){
 	/* for herobox image */
 	.hero-overlay > img{
-		width: 200px;
+		width: 220px;
 		display: inline;
 		right: 130px;
 	}
-	.hero-container{
+	/* .hero-container{
 		flex-direction: column;
 		flex-wrap: wrap;
-	}
-	.about-me-box1{
-		height: 190px;
+	} */
+
+	/* ----About Me------- */
+	.about-me-box1-cont{
+		height: 200px;
 	}
 	.about-me-box2{
-		height: 800px;
+		height: 1050px;
+	}
+	.about-me-right div{
+		width: 120px;
 	}
 	.about-me{
-		height: 1100px;
-	}
+		height: 1400px;
+	} 
 
+	/*-----My Services-----*/
 	.my-services-1 div{
 		height: 100px;
 	}
 
+	/*------ Project Request----- */
 	.project-request{
-		height: 500px;
+		height: 380px;
 	}
 	.button-wrap{
 		flex-direction: row;
 	}
 
+	/* ------Testimonial------ */
 	.testimonial{
 		height: 510px;
+	}
+
+	form{
+		width: 50%;
 	}
 }
 
 @media only screen and (min-width:703px){
+	/* -----My Services----- */
 	.my-services{
 		height: 1250px;
 	}
+
+	/* ------Project Request----- */
 	.project-request{
 		height: 400px;
 	}
 }
 
 @media only screen and (min-width:768px ){
-	/* for herobox image */
+	/* ------Herobox------- */
 	.hero-overlay > img{
 		width: 300px;
 		display: inline;
 		right: 130px;
 	}
-	.hero-container{
-		margin-left: 98px;
-	}
+	/* .hero-container{
+		margin-left: 98px;} */
+	
+	/* ------About Me------ */
 	.about-me-box2{
-		grid-template-columns: 50% 50%;
-		height: 500px;
+		flex-direction: row;
+		height: 600px;
 	}
 	.about-me{
-		height: 800px;
+		height: 900px;
+	} 
+	.about-me-left{
+		width:50%;
 	}
-	/* .recent-work{
-		height: 2100px;
-	} */
+	.about-me-right{
+		width:50%;
+	}
+
+	/* ------Project Request----- */
+	.project-request{
+		height: 350px;
+
+	/*------- Portfolio Section------ */
+	.recent-work-1{
+		height: 150px;
+	}
+	.recent-work{
+		height: 1800px
+	}
 	
 }
 
 @media only screen and (min-width:886px){
+	/* -----Portfolio Section----- */
 	.recent-work{
-		height: 1200px;
+		height: auto;
+		padding-bottom: 30px;
+	}
+	.recent-work-1{
+		height: 100px;
+	}
+	.recent-work-2{
+		height: auto;
+		align-content: center;
 	}
 }
 
 @media only screen and (min-width: 992px) {
-	/* for nav bar */
+	/* ------Navbar------- */
 	.mobile{
 		display: inline;
 	}
 
+	/* ------My Services----- */
 	.my-services-1 div{
 		height: 70px;
 	}
+
+	/* --------Project Request------- */
 	.project-request{
 		height: 300px;
 }
 
 @media only screen and (min-width:1058px){
+	/* ------My Services------ */
 	.my-services{
-		height:800px;
+		height:900px;
 	}
 }
 
 @media only screen and (min-width: 1200px){
+	/* ------Portfolio Section----- */
 	.recent-work-2{
 		height: 70%;
 	}
