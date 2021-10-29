@@ -103,6 +103,17 @@ nav{
 	/*margin-top: 0px;*/
 }
 
+.hamburger{
+	float: right;
+	background: transparent;
+	cursor: pointer;
+	padding: 5px;
+	margin-top: 25px;
+	border: none;
+	color: rgba(75, 104, 191,1.0);
+
+}
+
 .menu-items{
 	float: right;
 	margin-top: 32px;
@@ -150,6 +161,33 @@ nav div ul li a:hover:after{
 .menu-items .current{
 	background-color: red;
 }
+
+.nav-ul{
+	display: flex;
+	padding: 10px;
+	width: 80%;
+	position: relative;
+	margin-top: 0px;
+	margin: auto;
+	flex-direction: column;
+	background-color: rgba(39, 38, 38, 0.98);
+	border-radius: 0px 0px 10px 10px;
+}
+
+.nav-ul > li{
+	padding: 10px;
+	/* width: 100%; */
+	margin: 0px;
+	width: 130px;
+	margin: auto;
+	text-align: center;
+}
+
+.nav-ul a{
+	color: white;
+	justify-content: center;
+}
+
 /*-----------Nav Bar End--------------*/
 
 
@@ -385,7 +423,7 @@ nav div ul li a:hover:after{
 /*---------About Me Section----------*/
 
 .about-me{
-	height: 1800px;
+	height: 1680px;
 	/* background-color: red; */
 	background-color: white;
 	display: block;
@@ -401,7 +439,7 @@ nav div ul li a:hover:after{
 
 .about-me-box1-cont {
 	width: 80%; 
-	height: 400px;
+	height: 360px;
 	margin: auto;
 	letter-spacing: 0.5px;
 	/* border: 1px solid red; */
@@ -411,7 +449,7 @@ nav div ul li a:hover:after{
 .about-me-box2 {
 	padding: 10px;
 	margin: 20px;
-	height: 1300px;
+	height: 1133px;
 	/* background-color: white; */
 	/* background-color: blue; */
 	display: flex;
@@ -1178,6 +1216,7 @@ form > h1{
 	.my-name{
 		margin-top: 20px;
 	}
+
 	.hero-socials{
 		flex-wrap:wrap
 	}
@@ -1200,7 +1239,7 @@ form > h1{
 		padding-bottom: 10px;
 	}
 	.my-services{
-		height: 2380px;
+		height: 2300px;
 	}
 
 	/* ------Project Request----- */
@@ -1211,6 +1250,10 @@ form > h1{
 
 
 @media only screen and (min-width:600px ){
+	.nav-ul {
+		margin-top: 80px;
+		box-shadow: 1px 1px 5px gray;
+	}
 	/* for herobox image */
 	.hero-overlay > img{
 		width: 220px;
@@ -1329,6 +1372,9 @@ form > h1{
 	/* ------Navbar------- */
 	.mobile{
 		display: inline;
+	}
+	.hamburger{
+		display: none;
 	}
 
 	/* ------My Services----- */

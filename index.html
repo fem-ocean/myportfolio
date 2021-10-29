@@ -10,6 +10,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
@@ -20,7 +21,10 @@
 		<nav>
 			<div class="container">
 				<div class="logo"><a href="portfolio060721.html">F</a></div>
-				<ul class="menu-items mobile">
+				<button class="hamburger" id="hamburger">
+					<i class="fas fa-bars fa-2x"></i>
+				</button>
+				<ul class="menu-items mobile" id="menu-items">
 					<li><a class="active" href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#services">Services</a></li>
@@ -49,7 +53,7 @@
 							<h1 style="color: rgb(75, 104, 191);font-size: 30px;text-transform: uppercase;margin-bottom: 20px;letter-spacing: 2px;">Hello i'm</h1>
 							<h1 class="my-name">Femi Oshin</h1>
 							<p>A UI/UX Designer and Web Developer</p>
-							<button class="hero-button"><a href="#portfolio">View my work</a></button>
+							<button class="hero-button" id="herobutton"><a href="#portfolio">View my work</a></button>
 							<div class="hero-socials">
 								<div class="social-fb">
 									<a target="_blank"href="#"><img src="./Assets/facebook.svg"></a>
@@ -86,10 +90,10 @@
 					<p style="font-size:18px"><strong>Hi there! I'm Femi Oshin</strong></p>
 					<p style="margin-top: 8%;">I am an aspiring full-stack web developer currently specialized in front-end web development. I take pride in my work, and only deliver professional, clean, polished products. Upon completion of my undergradate program in electrical-electronics engineering, i worked as a renewable energy technologist for 6 years. Today, i have more than 3 years experience in I.T and Web development.</p>
 					<p style="margin-top: 8%;">I made a career switch into I.T because it was fascinating to see how tech products could help individuals and organisations save time, save money and expedite processes. It's simply magical!</p>
-					<div class="birth">
-						<div>
+					<div class="birth" style="margin-top: 20px;">
+						<!-- <div>
 							<img src="Assets/calendar.svg"> <strong style="margin-right: 5px;">Date of birth:</strong> 8 June 1995
-						</div>
+						</div> -->
 
 						<div style="margin-top: 10px;"></div>
 						
@@ -238,7 +242,7 @@
 		<section class="project-request">
 			<div class="project-request-overlay">
 				<div class="pr-cont">
-					<h1>Have any Project on Mind?</h1>
+					<h1>Have any Project in Mind?</h1>
 					<p>I am currently open to new opportunities. Please kindly contact me if you have a full-time job opening or a project you want to work on.</p>
 					<div class="button-wrap">
 						<div class="cv-button">
@@ -355,10 +359,10 @@
 					<a href="#"><img   src="Assets/facebook.svg"></a>
 				</div>
 				<div class="social-2">
-					<a href="#"><img src="Assets/twittericons-8.svg"></a>
+					<a href="https://twitter.com/cuul_fm?t=AeFnkBtiU9Op0B9IbGKnvQ&s=09"><img src="Assets/twittericons-8.svg"></a>
 				</div>
 				<div class="social-3">
-					<a href="#"><img src="Assets/linkedin-2.svg"></a>
+					<a href="https://www.linkedin.com/in/femi-oshin"><img src="Assets/linkedin-2.svg"></a>
 				</div>
 			</div>
 			<p style="color: white;font-size: 12px; margin-top:15px">&copy;All rights reserved.</p>
@@ -378,12 +382,7 @@
 
 	
 	<!---------- JavsScript----- -->
-	<!-- <script>
-		$("a").click(function(){
-			$("a").css("color","");
-			$(this).css("color","rgb(75,104,191)");
-		});
-	</script> -->
+	<script src="index.js"></script>
 	<!---------- JavaScript end------ -->
 
 
