@@ -24,7 +24,6 @@ $mobiles =320px;} */
 
 
 body{
-	margin: 0;
 	/*background-color: lightblue;*/
 	font-family: "montserrat", sans-serif;
 	font-size: 14px;
@@ -59,6 +58,31 @@ img{
 	display: none;
 }
 
+/* main{
+	scroll-snap-type: y proximity;
+	overflow-y: scroll;
+	height: 100vh;
+	scroll-padding: 120px;
+}
+
+.about-me{
+	scroll-snap-align: start;
+}
+.my-services{
+	scroll-snap-align: start;
+}
+.project-request{
+	scroll-snap-align: start;
+}
+.recent-work{
+	scroll-snap-align: start;
+}
+.testimonial{
+	scroll-snap-align: start;
+}
+.form-cont{
+	scroll-snap-align: start;
+} */
 
 
 /*------Nav Bar ---------*/
@@ -111,8 +135,21 @@ nav{
 	margin-top: 25px;
 	border: none;
 	color: rgba(75, 104, 191,1.0);
-
 }
+
+
+.closeMenu{
+	color: rgba(75, 104, 191,1.0);
+	cursor: pointer;
+	background: none;
+	border: none;
+	float: right;
+	display: block;
+	position: absolute;
+	top: 25px;
+	right: 40px;
+}
+
 
 .menu-items{
 	float: right;
@@ -139,7 +176,7 @@ nav div ul li a:after{
 	transform: translateX(-50%) scaleX(0);
 	-webkit-transform: translateX(-50%) scaleX(0);
 	/*transform-origin: 50% 50%;*/
-	-webkit-transform-origin: 50% 50%;
+	/* -webkit-transform-origin: 50% 50%; */
 	width: 100%;
 	height: 2px;
 	background-color: rgba(75, 104, 191,1.0);
@@ -163,20 +200,26 @@ nav div ul li a:hover:after{
 }
 
 .nav-ul{
-	display: flex;
+	display: none;
 	padding: 10px;
-	width: 80%;
-	position: relative;
-	margin-top: 0px;
-	margin: auto;
+	width: 100%;
+	height: 80vh;
+	top: 0;
+	right: 0;
+	left: 0;
+	position: fixed;
+	z-index: 10;
 	flex-direction: column;
 	background-color: rgba(39, 38, 38, 0.98);
 	border-radius: 0px 0px 10px 10px;
+	transition: top 1s ease;
 }
+
+
+
 
 .nav-ul > li{
 	padding: 10px;
-	/* width: 100%; */
 	margin: 0px;
 	width: 130px;
 	margin: auto;
@@ -1250,10 +1293,7 @@ form > h1{
 
 
 @media only screen and (min-width:600px ){
-	.nav-ul {
-		margin-top: 80px;
-		box-shadow: 1px 1px 5px gray;
-	}
+	
 	/* for herobox image */
 	.hero-overlay > img{
 		width: 220px;
@@ -1330,7 +1370,7 @@ form > h1{
 		height: 600px;
 	}
 	.about-me{
-		height: 900px;
+		height: 930px;
 	} 
 	.about-me-left{
 		width:50%;
@@ -1342,7 +1382,7 @@ form > h1{
 	/* ------Project Request----- */
 	.project-request{
 		height: 350px;
-
+	}
 	/*------- Portfolio Section------ */
 	.recent-work-1{
 		height: 150px;
