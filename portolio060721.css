@@ -54,9 +54,6 @@ img{
 	max-width: 100%;
 }
 
-.mobile{
-	display: none;
-}
 
 /* main{
 	scroll-snap-type: y proximity;
@@ -104,6 +101,8 @@ nav{
 	/* background-color: red; */
 	margin: auto;
 	/*max-width: 1140px;*/
+	display: flex;
+	justify-content: space-between;
 }
 
 .logo{
@@ -152,9 +151,20 @@ nav{
 
 
 .menu-items{
-	float: right;
-	margin-top: 32px;
 	font-size: 16px;
+	display: none;
+	padding: 10px;
+	width: 100%;
+	height: 80vh;
+	top: 0;
+	right: 0;
+	left: 0;
+	position: fixed;
+	z-index: 10;
+	flex-direction: column;
+	background-color: rgba(39, 38, 38, 0.98);
+	border-radius: 0px 0px 10px 10px;
+	transition: top 1s ease;
 }
 
 nav div ul li a{
@@ -190,35 +200,9 @@ nav div ul li a:hover:after{
 
 }
 
+
+ 
 .menu-items > li{
-	display: inline;
-	margin-left: 35px;
-}
-
-.menu-items .current{
-	background-color: red;
-}
-
-.nav-ul{
-	display: none;
-	padding: 10px;
-	width: 100%;
-	height: 80vh;
-	top: 0;
-	right: 0;
-	left: 0;
-	position: fixed;
-	z-index: 10;
-	flex-direction: column;
-	background-color: rgba(39, 38, 38, 0.98);
-	border-radius: 0px 0px 10px 10px;
-	transition: top 1s ease;
-}
-
-
-
-
-.nav-ul > li{
 	padding: 10px;
 	margin: 0px;
 	width: 130px;
@@ -226,10 +210,10 @@ nav div ul li a:hover:after{
 	text-align: center;
 }
 
-.nav-ul a{
+.menu-items a{
 	color: white;
 	justify-content: center;
-}
+} 
 
 /*-----------Nav Bar End--------------*/
 
@@ -302,10 +286,10 @@ nav div ul li a:hover:after{
 }
 
 .hero-overlay > img{
-	width: 120px;
+	width: 180px;
 	position: absolute;
 	bottom: 5px;
-	right: 20px;
+	right: 0px;
 	/* max-width: 100%; */
 	/* display: none; */
 }
@@ -1229,7 +1213,7 @@ form > h1{
 	.hero-overlay > img{
 		border-radius: 50%;
 		bottom: 70vw;
-		width: 100px;
+		width: 150px;
 	}
 
 	/* ----About Me------- */
@@ -1296,9 +1280,9 @@ form > h1{
 	
 	/* for herobox image */
 	.hero-overlay > img{
-		width: 220px;
+		width: 300px;
 		display: inline;
-		right: 130px;
+		right: 100px;
 	}
 	/* .hero-container{
 		flex-direction: column;
@@ -1357,9 +1341,9 @@ form > h1{
 @media only screen and (min-width:768px ){
 	/* ------Herobox------- */
 	.hero-overlay > img{
-		width: 300px;
+		width: 400px;
 		display: inline;
-		right: 130px;
+		right: 90px;
 	}
 	/* .hero-container{
 		margin-left: 98px;} */
@@ -1410,10 +1394,49 @@ form > h1{
 
 @media only screen and (min-width: 992px) {
 	/* ------Navbar------- */
-	.mobile{
-		display: inline;
+	.container .menu-items{
+		font-size: 16px;
+		display: flex;
+		flex-wrap: nowrap;
+		list-style-type: none;
+		flex-direction: row;
+		margin-top: 30px;
+		justify-content: center;
+		width: 750px;
+		font-size: 1rem;
+		/* padding: 10px; */
+		position: relative;
+		background-color: white;
+		height: 40px;
+		border-radius: 0px;
 	}
+	/* display: none;
+	padding: 10px;
+	width: 100%;
+	height: 80vh;
+	top: 0;
+	right: 0;
+	left: 0;
+	position: fixed;
+	z-index: 10;
+	flex-direction: column;
+	background-color: rgba(39, 38, 38, 0.98);
+	border-radius: 0px 0px 10px 10px;
+	transition: top 1s ease; */
+	
+
+	.menu-items > li > a{
+		color: rgba(75, 105, 191, 1.0);
+		display: inline-block;
+		text-decoration: none;
+	}
+
+
 	.hamburger{
+		display: none;
+	}
+
+	.closeMenu{
 		display: none;
 	}
 
