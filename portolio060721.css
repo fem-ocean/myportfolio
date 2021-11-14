@@ -22,6 +22,10 @@ $mobiles =320px;} */
 	outline: none;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 
 body{
 	/*background-color: lightblue;*/
@@ -205,7 +209,6 @@ nav div ul li a:hover:after{
 .menu-items > li{
 	padding: 10px;
 	margin: 0px;
-	width: 130px;
 	margin: auto;
 	text-align: center;
 }
@@ -642,8 +645,8 @@ nav div ul li a:hover:after{
 }
 
 .my-services-2 > div{
-	width: 250px;
-	height: 250px;
+	width: 260px;
+	height: 260px;
 	background-color: rgba(255, 255, 255, 1.0);
 	margin: 30px;
 	padding-top: 20px;
@@ -665,6 +668,7 @@ nav div ul li a:hover:after{
 
 .container-item{
 	box-shadow: 0.5px 0.5px 8px rgba(0, 0, 0, 0.2);
+	padding: 14px;
 }
 
 .container-item p{
@@ -744,7 +748,7 @@ nav div ul li a:hover:after{
 .project-request{
 	width: 100%;
 	height: 590px;
-	background-image: url('Assets/call center.jpg');
+	background-image: url('Assets/callcenter2.jpg');
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -826,6 +830,9 @@ nav div ul li a:hover:after{
 	transition: all 0.7s linear;
 }
 
+.btn-outline > a{
+	color: white;
+}
 /*------Project Request Section end---------*/
 
 
@@ -877,46 +884,53 @@ nav div ul li a:hover:after{
 .container-item1{
 	width: 250px;
 	height: 250px;
-	background-image: url("Assets/andraz.jpg");
+	background-image: url("Assets/man1.jpg");
 	background-size: cover;
 	margin: 30px;
-	box-shadow: 1px 1px 5px;
+	/* box-shadow: 1px 1px 5px; */
+	border: 1px outset black;
 }
 
 .container-item2{
 	width: 250px;
 	height: 250px;
-	background-image: url("Assets/burger2.jpg");
+	background-image: url("Assets/beach.jpg");
 	background-size: cover;
 	margin: 30px;
-	box-shadow: 1px 1px 5px;
+	border: 1px outset black;
+	/* box-shadow: 1px 1px 5px; */
 }
 
 .container-item3{
 	width: 250px;
 	height: 250px;
-	background-image: url("Assets/mealpro.jpg");
+	background-image: url("Assets/house2.jpg");
 	background-size: cover;
+	background-position:;
 	margin: 30px;
-	box-shadow: 1px 1px 5px;
+	border: 1px outset black;
+	/* box-shadow: 1px 1px 5px; */
 }
 
 .container-item4{
 	width: 250px;
 	height: 250px;
-	background-image: url("Assets/sun.jpg");
+	background-image: url("Assets/vehicle.jpg");
 	background-size: cover;
+	background-position: center;
 	margin: 30px;
-	box-shadow: 1px 1px 5px;
+	border: 1px outset black;
+	/* box-shadow: 1px 1px 5px; */
 }
 
 .container-item5{
 	width: 250px;
 	height: 250px;
-	background-image: url("Assets/riccardo.jpg");
+	background-image: url("Assets/family.jpg");
 	background-size: cover;
 	margin: 30px;
-	box-shadow: 1px 1px 5px;
+	border: 1px outset black;
+	/* box-shadow: 1px 1px 5px; */
 }
 
 .container-item6{
@@ -925,7 +939,8 @@ nav div ul li a:hover:after{
 	background-image: url("Assets/pizzza.jpg");
 	background-size: cover;
 	margin: 30px;
-	box-shadow: 1px 1px 5px ;
+	border: 1px outset black;
+	/* box-shadow: 1px 1px 5px ; */
 }
 
 
@@ -961,7 +976,7 @@ nav div ul li a:hover:after{
 	width: 100%;
 	height: 610px;
 	display: block;
-	background-image: url("Assets/Ajah-1.jpg");
+	background-image: url("Assets/office.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
@@ -1030,7 +1045,7 @@ nav div ul li a:hover:after{
 .contact{
 	width: 100%;
 	height: 90vh;
-	background-image: url("Assets/cityy.jpg");
+	background-image: url("Assets/city2.jpg");
 	background-size: cover;
 	background-position: center;
 	position: fixed;
@@ -1426,7 +1441,7 @@ form > h1{
 	
 
 	.menu-items > li > a{
-		color: rgba(75, 105, 191, 1.0);
+		color: black;
 		display: inline-block;
 		text-decoration: none;
 	}
