@@ -26,7 +26,6 @@ html{
 	scroll-behavior: smooth;
 }
 
-
 body{
 	/*background-color: lightblue;*/
 	font-family: "montserrat", sans-serif;
@@ -35,16 +34,13 @@ body{
 	overflow-x: hidden;
 }
 
-
 ::before, ::after{
 	box-sizing: border-box;
 }
 
-
 a{
 	text-decoration: none;
 }
-
 
 ul{
 	list-style-type: none;
@@ -351,18 +347,21 @@ nav div ul li a:hover:after{
 }
 
 .hero-socials{
-	width: 200px;
+	width: 150px;
 	height: 45px;
 	/* background-color: rgba(15, 255, 100, 1.0); */
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: row;
-	justify-content: space-between;
+	/* justify-content: space-around; */
 	align-items: center;
-	margin-top: 10px;
+	justify-content: flex-start;
+	justify-content: space-between;
+	/* gap: 40px; */
+	margin-top: 20px;
 }
 
-.social-fb{
+.git{
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
@@ -373,14 +372,14 @@ nav div ul li a:hover:after{
 }
 
 
-.social-fb:hover{
+.git:hover{
 	border: 2px solid rgba(75, 104, 191, 0.8);
 	box-shadow: 0 0 5px rgba(75, 104, 191, 0.7);
 	transition: all 0.5s linear;
 }
 
-.social-fb:focus,
-.social-fb:active{
+.git:focus,
+.git:active{
 	border: 2px solid rgba(0, 0, 0, 0.8);
 	transition: none;
 }
@@ -428,7 +427,7 @@ nav div ul li a:hover:after{
 	transition: none;
 }
 
-.social-fb img{
+.git img{
 	width: 70%;
 	margin: auto;
 	margin-top: 6px;
@@ -459,6 +458,8 @@ nav div ul li a:hover:after{
 	display: block;
 	position: relative;
 	padding-top: 30px;
+	scroll-margin-block-start: 20px;
+
 }
 
 .about-me-box1{
@@ -605,6 +606,8 @@ nav div ul li a:hover:after{
 	background-color: rgba(251, 251, 251, 1.0);
 	/*padding-top: 30px;*/
 	/* padding-bottom: 30px; */
+	scroll-margin-block-start: 55px;
+	
 }
 
 .my-services-1 h1{
@@ -646,11 +649,12 @@ nav div ul li a:hover:after{
 
 .my-services-2 > div{
 	width: 260px;
-	height: 260px;
+	height: 300px;
 	background-color: rgba(255, 255, 255, 1.0);
 	margin: 30px;
 	padding-top: 20px;
 	/*border: 1px solid rgba(0, 0, 0, 0.2);*/
+	/* overflow-x: scroll; */
 }
 
 .icon{
@@ -841,18 +845,19 @@ nav div ul li a:hover:after{
 
 .recent-work{
 	width: 100%;
-	height: 2280px;
+	height: 1172px;
 	display: block;
 	position: relative;
 	background-color: white;
 	/* background-color: rgb(48, 92, 150); */
 	padding-top: 40px;
+	scroll-margin-block-start: 45px;
 }
 
 .recent-work-1{
 	text-align: center;
 	width: 60%;
-	height: 190px;
+	height: 400px;
 	/* background-color: black; */
 	margin: auto;
 	/* position: absolute; */
@@ -869,36 +874,110 @@ nav div ul li a:hover:after{
 }
 
 .recent-work-2{
-	display: flex;
-	flex-direction: row;
-	width: 70%;
-	height:1900px;
+	display: block;
+	/* flex-direction: row; */
+	width: 90%;
+	height:600px;
 	/* position: absolute; */
 	/* background-color: yellow; */
-	flex-wrap: wrap;
-	justify-content: center;
+	/* flex-wrap: wrap; */
+	/* align-items: flex-start; */
 	/*justify-content: space-around;*/
 	margin: auto;
+	margin-top: 20px;
 }
 
 .container-item1{
-	width: 250px;
-	height: 250px;
-	background-image: url("Assets/man1.jpg");
-	background-size: cover;
-	margin: 30px;
-	/* box-shadow: 1px 1px 5px; */
-	border: 1px outset black;
+	width: 280px;
+	height: 650px;
+	/* background-image: url(""); */
+	/* background-size: cover; */
+	/* margin-bottom: 20px; */
+	box-shadow: .2px .2px 3px .3px rgba(0, 0, 0, 0.623);
+	cursor: pointer;
+	/* border: 1px outset black; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	transition: box-shadow 1s;
+	margin: auto;
+	justify-content: space-between;
 }
 
+.container-item1>a>div>p{
+	font-size: 18px;
+	font-weight: bolder;
+	padding-bottom: 10px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.container-item1:hover{
+	box-shadow: .9px .9px 6px .9px rgba(0, 0, 0, 0.623);
+}
+
+.container-item1__picture{
+	/* background-color: blue; */
+	background-image: url('Assets/amazonclonebanner.png');
+	width: 100%;
+	height: 150px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	/* object-fit: none; */
+}
+
+.container-item1__info{
+	width: 100%;
+	height: auto;
+	padding-top: 10px;
+}
+
+.container-item1__info > strong > p{
+	text-align: center;
+	font-size: 14px;
+	text-decoration: underline;
+	margin-top: 10px;
+}
+
+.container-item1__info > ul > li{
+	margin-bottom: 10px;
+	list-style-type: disc;
+	/* text-align: center; */
+}
+
+.btn-portfolio{
+	font-size: 15px;
+	background-color: rgba(117, 78, 249, 1.0);
+	width: 100%;
+	padding: 10px 20px;
+	border-radius: 30px;
+	border: 1px solid rgba(117, 78, 249, 1.0);
+	display: block;
+	/* color: white; */
+	outline: none;
+	cursor: pointer;
+	transition: all 0.7s linear;
+}
+
+.btn-portfolio > a{
+	color: white;
+}
 .container-item2{
 	width: 250px;
 	height: 250px;
 	background-image: url("Assets/beach.jpg");
 	background-size: cover;
 	margin: 30px;
-	border: 1px outset black;
-	/* box-shadow: 1px 1px 5px; */
+	/* border: 1px outset black; */
+	box-shadow: .5px .5px 4px .5px rgba(0, 0, 0, 0.623);
+	cursor: pointer;
+}
+
+.container-item2:hover{
+	width: 252px;
 }
 
 .container-item3{
@@ -906,10 +985,16 @@ nav div ul li a:hover:after{
 	height: 250px;
 	background-image: url("Assets/house2.jpg");
 	background-size: cover;
-	background-position:;
+	/* background-position:; */
 	margin: 30px;
-	border: 1px outset black;
-	/* box-shadow: 1px 1px 5px; */
+	/* border: 1px outset black; */
+	box-shadow: .5px .5px 4px .5px rgba(0, 0, 0, 0.623);
+	cursor: pointer;
+}
+
+.container-item3:hover{
+	/* width: 252px; */
+	margin-bottom: 10px;
 }
 
 .container-item4{
@@ -919,8 +1004,12 @@ nav div ul li a:hover:after{
 	background-size: cover;
 	background-position: center;
 	margin: 30px;
-	border: 1px outset black;
-	/* box-shadow: 1px 1px 5px; */
+	/* border: 1px outset black; */
+	box-shadow: .5px .5px 4px .5px rgba(0, 0, 0, 0.623);
+	cursor: pointer;
+}
+.container-item4:hover{
+	width: 252px;
 }
 
 .container-item5{
@@ -929,18 +1018,25 @@ nav div ul li a:hover:after{
 	background-image: url("Assets/family.jpg");
 	background-size: cover;
 	margin: 30px;
-	border: 1px outset black;
-	/* box-shadow: 1px 1px 5px; */
+	/* border: 1px outset black; */
+	box-shadow: .5px .5px 4px .5px rgba(0, 0, 0, 0.623);
+	cursor: pointer;
 }
-
+.container-item5:hover{
+	width: 252px;
+}
 .container-item6{
 	width: 250px;
 	height: 250px;
 	background-image: url("Assets/pizzza.jpg");
 	background-size: cover;
 	margin: 30px;
-	border: 1px outset black;
-	/* box-shadow: 1px 1px 5px ; */
+	/* border: 1px outset black; */
+	box-shadow: .5px .5px 4px .5px rgba(0, 0, 0, 0.623);
+	cursor: pointer;
+}
+.container-item6:hover{
+	width: 252px;
 }
 
 
@@ -980,6 +1076,8 @@ nav div ul li a:hover:after{
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
+	scroll-margin-block-start: 55px;
+
 }
 
 .testimonial-overlay{
@@ -1064,7 +1162,7 @@ nav div ul li a:hover:after{
 
 .form-cont{
 	width: 100%;
-	height: 570px;
+	height: 270px;
 	margin-top: 400px;
 	background-color: black;
 	display: block;	
@@ -1072,7 +1170,7 @@ nav div ul li a:hover:after{
 
 form{
 	width: 80%;
-	height: 680px;
+	height: 380px;
 	margin: auto;
 	background-color: white;
 	position: relative;
@@ -1083,6 +1181,22 @@ form{
 form > h1{
 	font-size: 35px;
 	text-align: center;
+
+}
+
+form > div{
+	margin-top: 30px;
+	line-height: 4;
+}
+
+form > div > p{
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	background: rgba(75, 104, 191, 1.0);
+}
+
+.contact-details > p{
 
 }
 
@@ -1216,6 +1330,8 @@ form > h1{
 
 /*-------Footer Section end-------*/
 
+
+
 /*RESPONSIVENESS*/
 
 
@@ -1232,19 +1348,30 @@ form > h1{
 	}
 
 	/* ----About Me------- */
-	/* .about-me-box1{
-		height: 330px;
+	.about-me-box1{
+		height: 465px;
+	}
+
+	.about-me-box1-cont{
+		height: 445px;
 	}
 	.about-me-box2{
 		height:1000px;
 	}
 	.about-me{
-		height: 1400px; */
+		height: 1678px;
+	}
 
 	/* -----My Services----- */
 	.my-services{
-		height: 2380px;
+		height: 2650px;
+		padding-bottom: 20px;
 	}
+
+	.recent-work{
+		height: 1500px;
+	}
+
 	/* -----Contact me------ */
 	.form{
 		width: 80%;
@@ -1264,9 +1391,12 @@ form > h1{
 	}
 
 	/* ----About me----- */
-	
+	.about-me-box1{
+		height: 445px;
+	}
+
 	.about-me-box1-cont{
-		height: 330px;
+		height: 424px;
 	}
 	.about-me-box2{
 		height: 1150px;
@@ -1281,13 +1411,22 @@ form > h1{
 		padding-bottom: 10px;
 	}
 	.my-services{
-		height: 2300px;
+		height: 2580px;
 	}
+	
 
 	/* ------Project Request----- */
 	.project-request{
 		height: 530px;
+	}
+
+	/* ------Portfolio-------- */
+	.recent-work-1{
+		height: 330px;
+	}
+
 }
+
 
 
 
@@ -1305,6 +1444,10 @@ form > h1{
 	} */
 
 	/* ----About Me------- */
+	.about-me-box1{
+		height: 290px;
+	}
+	
 	.about-me-box1-cont{
 		height: 200px;
 	}
@@ -1331,6 +1474,16 @@ form > h1{
 		flex-direction: row;
 	}
 
+	/* -----Portfolio----- */
+
+	.container-item1{
+		width: 350px;
+	}
+
+	.recent-work-1{
+		height: 259px;
+	}
+
 	/* ------Testimonial------ */
 	.testimonial{
 		height: 510px;
@@ -1342,14 +1495,24 @@ form > h1{
 }
 
 @media only screen and (min-width:703px){
+	/* -----About Me ------- */
+	.about-me-box1{
+		height: 240px;
+	}
+
 	/* -----My Services----- */
 	.my-services{
-		height: 1250px;
+		height: 2470px;
 	}
 
 	/* ------Project Request----- */
 	.project-request{
 		height: 400px;
+	}
+
+	/* ------Portfolio----- */
+	.recent-work-1{
+		height: 240px;
 	}
 }
 
@@ -1360,10 +1523,13 @@ form > h1{
 		display: inline;
 		right: 90px;
 	}
+
 	/* .hero-container{
 		margin-left: 98px;} */
 	
 	/* ------About Me------ */
+	
+	
 	.about-me-box2{
 		flex-direction: row;
 		height: 600px;
@@ -1378,16 +1544,23 @@ form > h1{
 		width:50%;
 	}
 
+	/* ---------My Services-------- */
+	.my-services{
+		height: 1400px;
+	}
 	/* ------Project Request----- */
 	.project-request{
 		height: 350px;
 	}
 	/*------- Portfolio Section------ */
 	.recent-work-1{
-		height: 150px;
+		height: 210px;
+	}
+	.recent-work-2{
+		height: 650px;
 	}
 	.recent-work{
-		height: 1800px
+		height: 1000px
 	}
 	
 }
@@ -1399,7 +1572,7 @@ form > h1{
 		padding-bottom: 30px;
 	}
 	.recent-work-1{
-		height: 100px;
+		height: 210px;
 	}
 	.recent-work-2{
 		height: auto;
@@ -1454,7 +1627,14 @@ form > h1{
 	.closeMenu{
 		display: none;
 	}
+	/* -------About Me------ */
+	.about-me-box1{
+		height:179px;
+	}
 
+	.about-me-box1-cont{
+		height: 195px;
+	}
 	/* ------My Services----- */
 	.my-services-1 div{
 		height: 70px;
@@ -1468,7 +1648,7 @@ form > h1{
 @media only screen and (min-width:1058px){
 	/* ------My Services------ */
 	.my-services{
-		height:900px;
+		height:1000px;
 	}
 }
 
