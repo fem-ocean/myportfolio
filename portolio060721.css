@@ -285,7 +285,7 @@ nav div ul li a:hover:after{
 }
 
 .hero-overlay > img{
-	width: 180px;
+	width: 100px;
 	position: absolute;
 	bottom: 5px;
 	right: 0px;
@@ -518,7 +518,7 @@ nav div ul li a:hover:after{
 	display: grid;
 	padding: 15px;
 	margin-top: 20px;
-	border: 2px solid rgba(117, 78, 249, 1.0);
+	border: 2px solid #754ef9;
 	justify-content: center;
 	/* align-content: center; */ 
 	grid-column-gap: 30px;
@@ -903,7 +903,7 @@ nav div ul li a:hover:after{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 20px;
+	padding: 40px;
 	transition: box-shadow 1s;
 	margin: auto;
 	justify-content: space-between;
@@ -915,10 +915,12 @@ nav div ul li a:hover:after{
 	padding-bottom: 10px;
 	letter-spacing: 2px;
 	text-align: center;
+	color: #000000;
 }
 
 .container-item1:hover{
-	box-shadow: .9px .9px 6px .9px rgba(0, 0, 0, 0.623);
+	/* box-shadow: .9px .9px 6px .9px rgba(0, 0, 0, 0.623); */
+	border: 1px solid rgba(117, 78, 249, 1.0);
 }
 
 .container-item1__picture{
@@ -956,12 +958,14 @@ nav div ul li a:hover:after{
 	font-size: 14px;
 	text-decoration: underline;
 	margin-top: 10px;
+	color: #000000;
 }
 
 .container-item1__info > ul > li{
 	margin-bottom: 10px;
 	list-style-type: disc;
 	/* text-align: center; */
+	color: #000000;
 }
 
 .btn-portfolio{
@@ -1212,9 +1216,9 @@ form > div > p{
 	background: rgba(75, 104, 191, 1.0);
 }
 
-.contact-details > p{
+/* .contact-details > p{ }*/
 
-}
+
 
 .input-box{
 	width: 100%;
@@ -1450,7 +1454,7 @@ form > div > p{
 	
 	/* for herobox image */
 	.hero-overlay > img{
-		width: 300px;
+		width: 150px;
 		display: inline;
 		right: 100px;
 	}
@@ -1539,9 +1543,9 @@ form > div > p{
 @media only screen and (min-width:768px ){
 	/* ------Herobox------- */
 	.hero-overlay > img{
-		width: 400px;
+		width: 325px;
 		display: inline;
-		right: 90px;
+		right: 122px;
 	}
 
 	/* .hero-container{
