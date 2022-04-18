@@ -1543,7 +1543,7 @@ form > div > p{
 @media only screen and (min-width:768px ){
 	/* ------Herobox------- */
 	.hero-overlay > img{
-		width: 325px;
+		width: 320px;
 		display: inline;
 		right: 122px;
 	}
