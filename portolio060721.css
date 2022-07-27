@@ -947,6 +947,18 @@ nav div ul li a:hover:after{
 	/* object-fit: none; */
 }
 
+.container-item3__picture{
+	/* background-color: blue; */
+	background-image: url('Assets/Frame 197.jpg');
+	width: 100%;
+	height: 150px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	/* object-fit: none; */
+}
+
 .container-item1__info{
 	width: 100%;
 	height: auto;
@@ -1630,6 +1642,14 @@ form > div > p{
 		height: 330px;
 	}
 
+	.recent-work{
+		height: 2950px;
+	}
+
+	.recent-work-2{
+		height: 2500px;
+	}
+
 }
 
 
@@ -1688,7 +1708,7 @@ form > div > p{
 	}
 
 	.recent-work{
-		height: 1882px;
+		height: 2650px;
 	}
 
 	.recent-work-1{
@@ -1696,7 +1716,7 @@ form > div > p{
 	}
 
 	.recent-work-2{
-		height: 1490px;
+		height: 2250px;
 	}
 
 	/* ------Testimonial------ */
@@ -1727,7 +1747,7 @@ form > div > p{
 
 	/* ------Portfolio----- */
 	.recent-work{
-		height: 1800px;
+		height: 2600px;
 	}
 	
 	.recent-work-1{
@@ -1783,6 +1803,12 @@ form > div > p{
 }
 
 @media only screen and (min-width:886px){
+	
+	/* -----About Me----- */
+	.about-me{
+		height: 1032px;
+	}
+	
 	/* -----Portfolio Section----- */
 	.recent-work{
 		height: 1130px;
@@ -1796,6 +1822,7 @@ form > div > p{
 		flex-direction: row;
 		height: auto;
 		align-content: center;
+		gap: 7px;
 	}
 }
 
