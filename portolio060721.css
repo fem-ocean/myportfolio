@@ -1094,6 +1094,21 @@ nav div ul li a:hover:after{
 	font-weight: 25px;
 }
 
+.project-links{
+	width: 90%;
+	height: 80px;
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+.project-links p{
+	text-decoration: underline;
+	font-size: 20px;
+	color: #000000;
+}
+
 /*----Portfolio Section end--------*/
 
 
